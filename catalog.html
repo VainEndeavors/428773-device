@@ -42,29 +42,42 @@
 	<main class="catalog">
 		<div class="container">
 			<h1>Моноподы для селфи</h1>
-			<div class="breadcrumbs">
-				<p><a href="">Главная</a> <a href="">Каталог товаров</a> <span>Моноподы для селфи</span></p>
-			</div>
+			<ul class="breadcrumbs">
+					<li><a href="">Главная</a></li>
+					<li><a href="">Каталог товаров</a></li>
+					<li class="current-page">Моноподы для селфи</li>
+				</ul>
 		</div>
 		<div class="container-wide">
-			<div class="catalog-filter">
+			<section class="catalog-filter">
 				<h3>Фильтр:</h3>
 				<form action="">
-					<h4>Стоимость</h4>
-					<div class="price-range-slider"></div>
-					<h4>Цвет</h4>
-					<p><label><input type="checkbox" id="filter-color-black">Чёрный</label></p>
-					<p><label><input type="checkbox" id="filter-color-white">Белый</label></p>
-					<p><label><input type="checkbox" id="filter-color-blue">Синий</label></p>
-					<p><label><input type="checkbox" id="filter-color-red">Красный</label></p>
-					<p><label><input type="checkbox" id="filter-color-pink">Розовый</label></p>
-					<h4>Bluetooth</h4>
-					<p><label><input type="radio" name="bluetooth" id="bluetooth-yes">Есть</label></p>
-					<p><label><input type="radio" name="bluetooth" id="bluetooth-no">Нет</label></p>
+					<fieldset>
+						<legend>Стоимость</legend>
+						<div class="price-range-slider"></div>
+					</fieldset>
+					<fieldset>
+						<legend>Цвет</legend>
+						<ul>
+							<li><label><input type="checkbox" id="filter-color-black" value="black">Чёрный</label></li>
+							<li><label><input type="checkbox" id="filter-color-white" value="white">Белый</label></li>
+							<li><label><input type="checkbox" id="filter-color-blue" value="blue">Синий</label></li>
+							<li><label><input type="checkbox" id="filter-color-red" value="red">Красный</label></li>
+							<li><label><input type="checkbox" id="filter-color-pink" value="pink">Розовый</label></li>
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Bluetooth</legend>
+						<ul>
+							<li><label><input type="radio" name="bluetooth" id="bluetooth-yes">Есть</label></li>
+							<li><label><input type="radio" name="bluetooth" id="bluetooth-no">Нет</label></li>
+						</ul>
+					</fieldset>
 					<button class="btn" type="submit">Показать</button>
 				</form>
-			</div>
+			</section>
 			<section class="catalog-page">
+				<h2 class="hidden-header">Страница каталога</h2>
 				<div class="catalog-sort">
 					<p>Сортировка:
 						<a href="">По цене</a>
@@ -78,33 +91,33 @@
 				</div>
 				<div class="catalog-items">
 					<article class="catalog-item">
+						<h3>Любительская селфи-палка</h3>
+						<p><b>500 руб.</b></p>
 						<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-						<p>Любительская селфи-палка</p>
-						<b>500 руб.</b>
 					</article>
 					<article class="catalog-item">
+						<h3>Профессиональная селфи-палка</h3>
+						<p><b>1 500 руб.</b></p>
 						<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-						<p>Профессиональная селфи-палка</p>
-						<b>1 500 руб.</b>
 					</article>
 					<article class="catalog-item">
+						<h3>Непотопляемая селфи-палка</h3>
+						<p><b>2 500 руб.</b></p>
 						<img src="img/item-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-						<p>Непотопляемая селфи-палка</p>
-						<b>2 500 руб.</b>
 					</article>
 					<article class="catalog-item">
+						<h3>Селфи-палка &#171Следуй за мной&#187</h3>
+						<p><b>4 500 руб.</b></p>
 						<img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка &#171Следуй за мной&#187">
-						<p>Селфи-палка &#171Следуй за мной&#187</p>
-						<b>4 500 руб.</b>
 					</article>
 				</div>
-				<div class="catalog-paginator">
-					<a href="#prev">Назад</a>
-					<a href="#1">1</a>
-					<a href="#2">2</a>
-					<a href="#3">3</a>
-					<a href="#next">Вперед</a>
-				</div>
+				<ul class="catalog-paginator">
+					<li><a href="#prev">Назад</a></li>
+					<li class="paginator-current-page">1</li>
+					<li><a href="#2">2</a></li>
+					<li><a href="#3">3</a></li>
+					<li><a href="#next">Вперед</a></li>
+				</ul>
 			</section>
 		</div>
 	</main>
