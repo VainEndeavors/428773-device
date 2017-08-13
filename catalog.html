@@ -8,7 +8,7 @@
 <body>
   <header>
     <div class="container">
-      <p class="logo">DEVICE</p>
+      <p class="logo"><a href="index.html">DEVICE</a></p>
         <form>
           <button type="submit" name="search">Поиск</button>
           <input type="search" name="search-field" placeholder="Поиск по сайту" />
@@ -40,69 +40,73 @@
       </div>
   </header>
 	<section class="catalog">
-		<h2>Моноподы для селфи</h2>
-		<div class="breadcrumbs">
-			<p><a href="">Главная</a> <a href="">Каталог товаров</a> <a href="">Моноподы для селфи</a></p>
+		<div class="container">
+			<h2>Моноподы для селфи</h2>
+			<div class="breadcrumbs">
+				<p><a href="">Главная</a> <a href="">Каталог товаров</a> <a href="">Моноподы для селфи</a></p>
+			</div>
 		</div>
-		<div class="catalog-filter">
-			<h3>Фильтр:</h3>
-			<form action="">
-				<h4>Стоимость</h4>
-				<div class="price-range-slider"></div>
-				<h4>Цвет</h4>
-				<p><label><input type="checkbox" id="filter-color-black">Чёрный</label></p>
-				<p><label><input type="checkbox" id="filter-color-white">Белый</label></p>
-				<p><label><input type="checkbox" id="filter-color-blue">Синий</label></p>
-				<p><label><input type="checkbox" id="filter-color-red">Красный</label></p>
-				<p><label><input type="checkbox" id="filter-color-pink">Розовый</label></p>
-				<h4>Bluetooth</h4>
-				<p><label><input type="radio" name="bluetooth" id="bluetooth-yes">Есть</label></p>
-				<p><label><input type="radio" name="bluetooth" id="bluetooth-no">Нет</label></p>
-				<button class="btn" type="submit">Показать</button>
-			</form>
+		<div class="container-wide">
+			<div class="catalog-filter">
+				<h3>Фильтр:</h3>
+				<form action="">
+					<h4>Стоимость</h4>
+					<div class="price-range-slider"></div>
+					<h4>Цвет</h4>
+					<p><label><input type="checkbox" id="filter-color-black">Чёрный</label></p>
+					<p><label><input type="checkbox" id="filter-color-white">Белый</label></p>
+					<p><label><input type="checkbox" id="filter-color-blue">Синий</label></p>
+					<p><label><input type="checkbox" id="filter-color-red">Красный</label></p>
+					<p><label><input type="checkbox" id="filter-color-pink">Розовый</label></p>
+					<h4>Bluetooth</h4>
+					<p><label><input type="radio" name="bluetooth" id="bluetooth-yes">Есть</label></p>
+					<p><label><input type="radio" name="bluetooth" id="bluetooth-no">Нет</label></p>
+					<button class="btn" type="submit">Показать</button>
+				</form>
+			</div>
+			<section class="catalog-page">
+				<div class="catalog-sort">
+					<p>Сортировка:
+						<a href="">По цене</a>
+						<a href="">По типу</a>
+						<a href="">По популярности</a>
+					</p>
+					<p>
+						<label><input type="radio" name="sort-direction">По возрастанию</label>
+						<label><input type="radio" name="sort-direction">По убыванию</label>
+					</p>
+				</div>
+				<div class="catalog-items">
+					<article class="catalog-item">
+						<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+						<p>Любительская селфи-палка</p>
+						<b>500 руб.</b>
+					</article>
+					<article class="catalog-item">
+						<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+						<p>Профессиональная селфи-палка</p>
+						<b>1 500 руб.</b>
+					</article>
+					<article class="catalog-item">
+						<img src="img/item-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+						<p>Непотопляемая селфи-палка</p>
+						<b>2 500 руб.</b>
+					</article>
+					<article class="catalog-item">
+						<img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка &#171Следуй за мной&#187">
+						<p>Селфи-палка &#171Следуй за мной&#187</p>
+						<b>4 500 руб.</b>
+					</article>
+				</div>
+				<div class="catalog-paginator">
+					<a href="#prev">Назад</a>
+					<a href="#1">1</a>
+					<a href="#2">2</a>
+					<a href="#3">3</a>
+					<a href="#next">Вперед</a>
+				</div>
+			</section>
 		</div>
-		<section class="catalog-page">
-			<div class="catalog-sort">
-				<p>Сортировка:
-					<a href="">По цене</a>
-					<a href="">По типу</a>
-					<a href="">По популярности</a>
-				</p>
-				<p>
-					<label><input type="radio" name="sort-direction">По возрастанию</label>
-					<label><input type="radio" name="sort-direction">По убыванию</label>
-				</p>
-			</div>
-			<div class="catalog-items">
-				<article class="catalog-item">
-					<img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
-					<p>Любительская селфи-палка</p>
-					<b>500 руб.</b>
-				</article>
-				<article class="catalog-item">
-					<img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
-					<p>Профессиональная селфи-палка</p>
-					<b>1 500 руб.</b>
-				</article>
-				<article class="catalog-item">
-					<img src="img/item-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
-					<p>Непотопляемая селфи-палка</p>
-					<b>2 500 руб.</b>
-				</article>
-				<article class="catalog-item">
-					<img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка &#171Следуй за мной&#187">
-					<p>Селфи-палка &#171Следуй за мной&#187</p>
-					<b>4 500 руб.</b>
-				</article>
-			</div>
-			<div class="catalog-paginator">
-				<a href="#prev">Назад</a>
-				<a href="#1">1</a>
-				<a href="#2">2</a>
-				<a href="#3">3</a>
-				<a href="#next">Вперед</a>
-			</div>
-		</section>
 	</section>
 	<footer>
 	  <div class="container">
