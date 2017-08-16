@@ -1,37 +1,41 @@
 @font-face {
-  font-family: "Gilroy";
-  src: url("css/gilroylight.woff2") format("woff2"),
-       url("css/gilroylight.woff") format("woff");
+  font-family: 'Gilroy';
+  src: url('fonts/gilroylight.woff2') format('woff2'),
+       url('fonts/gilroylight.woff') format('woff'),
+       url('fonts/gilroylight.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: url("css/gilroyextrabold.woff2") format("woff2"),
-       url("css/gilroyextrabold.woff") format("woff");
+  font-family: 'Gilroy';
+  src: url('fonts/gilroyextrabold.woff2') format('woff2'),
+       url('fonts/gilroyextrabold.woff') format('woff'),
+       url('fonts/gilroyextrabold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("css/opensans.woff2") format("woff2"),
-       url("css/opensans.woff") format("woff");
+  font-family: 'Open Sans';
+  src: url('fonts/opensans.woff2') format('woff2'),
+       url('fonts/opensans.woff') format('woff'),
+       url('fonts/opensans-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Open Sans";
-  src: url("css/opensanslight.woff2") format("woff2"),
-       url("css/opensanslight.woff") format("woff");
+  font-family: 'Open Sans';
+  src: url('fonts/opensanslight.woff2') format('woff2'),
+       url('fonts/opensanslight.woff') format('woff'),
+       url('fonts/opensans-light.ttf') format('truetype');
   font-weight: lighter;
   font-style: normal;
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 15px;
   font-weight: lighter;
   line-height: 30px;
@@ -40,7 +44,7 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: "Gilroy", sans-serif;
+  font-family: Gilroy, sans-serif;
   font-weight: bold;
   letter-spacing: 0.01em;
   font-size: 47px;
@@ -52,7 +56,7 @@ h1, h2, h3 {
 }
 
 .btn {
-  font-family: "Gilroy", sans-serif;
+  font-family: Gilroy, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
