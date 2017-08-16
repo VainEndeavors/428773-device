@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Gilroy";
+  src: url("css/gilroylight.woff2") format("woff2"),
+       url("css/gilroylight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("css/gilroyextrabold.woff2") format("woff2"),
+       url("css/gilroyextrabold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("css/opensans.woff2") format("woff2"),
+       url("css/opensans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("css/opensanslight.woff2") format("woff2"),
+       url("css/opensanslight.woff") format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  line-height: 30px;
+  color: #464646;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3 {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  font-size: 47px;
+  line-height: 1.2em;
+}
+
+.catalog-item h3 {
+  font-size: 18px;
+}
+
+.btn {
+  font-family: "Gilroy", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}

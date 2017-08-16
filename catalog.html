@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <title>Device - Каталог</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="logo"><a href="index.html"><img src="img/logo.svg" alt="Device"></a></div>
+      <div class="logo"><a href="index.html"><img src="img/logo.svg" width="184" height="40" alt="Device"></a></div>
       <form action="url" method="get">
         <button type="submit" name="search">Поиск</button>
         <input type="search" name="search-field" placeholder="Поиск по сайту" />
@@ -81,34 +81,34 @@
       <section class="catalog-page">
         <h2 class="hidden-header">Страница каталога</h2>
         <div class="catalog-sort">
-          <p>Сортировка:
+          <p class="sort-categories">Сортировка:
             <a href="#">По цене</a>
             <a href="#">По типу</a>
             <a href="#">По популярности</a>
           </p>
-          <div class="ascending-descending">
-            <label><input type="radio" name="sort-direction">По возрастанию</label>
-            <label><input type="radio" name="sort-direction">По убыванию</label>
-          </div>
+          <p class="ascending-descending">
+            <a href="#">По возрастанию</a>
+            <a href="#">По убыванию</a>
+          </p>
         </div>
         <div class="catalog-items">
           <article class="catalog-item">
-            <h3>Любительская селфи-палка</h3>
+            <h3><a href="#">Любительская селфи-палка</a></h3>
             <p>500 руб.</p>
             <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
           </article>
           <article class="catalog-item">
-            <h3>Профессиональная селфи-палка</h3>
+            <h3><a href="#">Профессиональная селфи-палка</a></h3>
             <p>1 500 руб.</p>
             <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
           </article>
           <article class="catalog-item">
-            <h3>Непотопляемая селфи-палка</h3>
+            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
             <p>2 500 руб.</p>
             <img src="img/item-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
           </article>
           <article class="catalog-item">
-            <h3>Селфи-палка &#171;Следуй за мной&#187;</h3>
+            <h3><a href="#">Селфи-палка &#171;Следуй за мной&#187;</a></h3>
             <p>4 500 руб.</p>
             <img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка &#171;Следуй за мной&#187;">
           </article>
@@ -125,7 +125,7 @@
   </main>
   <footer class="main-footer">
     <div class="container">
-      <p class="logo">DEVICE</p>
+      <div class="logo"><img src="img/logo-footer.svg" width="184" height="40" alt="Device"></div>
       <div class="footer-user-area">
         <p class="user-block"><a href="#">Выйти</a></p>
         <p>
