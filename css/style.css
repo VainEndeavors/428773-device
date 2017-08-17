@@ -48,6 +48,17 @@ body {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
 .header {
   font-family: 'Gilroy', sans-serif;
   font-weight: bold;
@@ -61,13 +72,8 @@ body {
 }
 
 .header-small a {
-  font-family: inherit;
-  font-weight: inherit;
+  font: inherit;
   text-decoration: none;
-}
-
-.hidden-header {
-  font-size: 0;
 }
 
 .btn {
