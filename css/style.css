@@ -35,7 +35,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: lighter;
   line-height: 30px;
@@ -60,7 +60,7 @@ body {
 }
 
 .header {
-  font-family: 'Gilroy', sans-serif;
+  font-family: 'Gilroy', Arial, sans-serif;
   font-weight: bold;
   letter-spacing: 0.01em;
   font-size: 47px;
