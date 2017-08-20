@@ -77,10 +77,69 @@ body {
 }
 
 .btn {
+  display: block;
+  border: none;
+  background: none;
+  background-image: linear-gradient(to top, transparent 16px, #f0c52e 16px, #f0c52e 24px, transparent 24px);
+  height: 40px;
+  padding: 0;
+  margin: 0;
+  color: #000000;
   font-family: 'Gilroy', Arial, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  line-height: 22px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.1em;
+}
+
+.btn:hover,
+.btn:active {
+  background-image: linear-gradient(to top, #f0c52e 0%, #f0c52e 100%);
+}
+
+.btn:active {
+  color: rgba(190, 156, 34, 0.3);
+}
+
+.slide .btn {
+  width: 220px;
+}
+
+.about-us .btn,
+.contacts .btn {
+  width: 260px;
+}
+
+ .contacts .btn,
+ .catalog-filter .btn,
+ .catalog-item .btn {
+  padding-bottom: 10px;
+}
+
+.catalog-filter .btn,
+.catalog-item .btn {
+  width: 200px;
+}
+
+.add-to-comparison {
+  font-family: 'Open Sans', Tahoma, sans-serif;
+  opacity: 0.5;
+  border: none;
+  background: none;
+}
+
+.add-to-comparison:hover, .add-to-comparison:focus {
+  opacity: 1;
+}
+
+.label-form, .label-sort {
+  font-family: 'Gilroy', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000
 }

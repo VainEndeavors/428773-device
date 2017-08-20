@@ -14,7 +14,7 @@
         <input type="search" name="search-field" placeholder="Поиск по сайту" />
       </form>
       <div class="user-block">
-        <p>Валентин Петухов</p> <a href="#">Выйти</a>
+        <p><a class="user-profile" href="#">Валентин Петухов</a> <a href="#">Выйти</a></p>
         <p class="cart-section">
           <a class="compare" href="#">Сравнить</a>
           <a class="cart" href="#">Корзина</a>
@@ -23,6 +23,7 @@
       <nav class="main-nav">
         <ul>
           <li>Каталог товаров
+            <button class="main-nav-submenu-open">Открыть подменю каталога</button>
             <div class="catalog-submenu">
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
@@ -53,7 +54,7 @@
     <div class="container-wide">
       <div class="container">
         <section class="catalog-filter">
-          <p>Фильтр:</p>
+          <span class="label-form">Фильтр:</span>
           <form action="url" method="get">
             <fieldset>
               <legend>Стоимость</legend>
@@ -82,7 +83,8 @@
         <section class="catalog-page">
           <h2 class="visually-hidden">Страница каталога</h2>
           <div class="catalog-sort">
-            <p class="sort-categories">Сортировка:
+            <span class="label-form">Сортировка:</span>
+            <p class="sort-categories">
               <a href="#">По цене</a>
               <a href="#">По типу</a>
               <a href="#">По популярности</a>
@@ -97,21 +99,37 @@
               <h3 class="header header-small"><a href="#">Любительская селфи-палка</a></h3>
               <p>500 руб.</p>
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
+              <div class="catalog-item-hover">
+                <button class="btn">В корзину</button>
+                <button class="add-to-comparison">Добавить к сравнению</button>
+              </div>
             </article>
             <article class="catalog-item">
               <h3 class="header header-small"><a href="#">Профессиональная селфи-палка</a></h3>
               <p>1 500 руб.</p>
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
+              <div class="catalog-item-hover">
+                <button class="btn">В корзину</button>
+                <button class="add-to-comparison">Добавить к сравнению</button>
+              </div>
             </article>
             <article class="catalog-item">
               <h3 class="header header-small"><a href="#">Непотопляемая селфи-палка</a></h3>
               <p>2 500 руб.</p>
               <img src="img/item-1.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
+              <div class="catalog-item-hover">
+                <button class="btn">В корзину</button>
+                <button class="add-to-comparison">Добавить к сравнению</button>
+              </div>
             </article>
             <article class="catalog-item">
               <h3 class="header header-small"><a href="#">Селфи-палка &#171;Следуй за мной&#187;</a></h3>
               <p>4 500 руб.</p>
               <img src="img/item-1.jpg" width="360" height="380" alt="Селфи-палка &#171;Следуй за мной&#187;">
+              <div class="catalog-item-hover">
+                <button class="btn">В корзину</button>
+                <button class="add-to-comparison">Добавить к сравнению</button>
+              </div>
             </article>
           </div>
           <ul class="catalog-paginator">

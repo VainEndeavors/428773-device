@@ -23,6 +23,7 @@
       <nav class="main-nav">
         <ul>
           <li>Каталог товаров
+            <button class="main-nav-submenu-open">Открыть подменю каталога</button>
             <div class="catalog-submenu">
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
@@ -101,8 +102,9 @@
       </li>
     </ol>
   </section>
-  <div class="container popular">
-     <ul>
+  <section class="container popular">
+    <h2 class="visually-hidden">Популярные товары</h2>
+    <ul class="popular-list">
       <li><a href="#">Виртуальная реальность</a></li>
       <li><a href="#">Моноподы для селфи</a></li>
       <li><a href="#">Экшн-камеры</a></li>
@@ -110,9 +112,10 @@
       <li><a href="#">Умные часы</a></li>
       <li><a href="#">Квадрокоптеры</a></li>
     </ul>
-  </div>
+  </section>
   <section class="services-slider">
     <div class="container">
+      <h2 class="visually-hidden">Сервисы</h2>
       <input type="radio" name="services-slider-radio" id="service-1" checked>
       <input type="radio" name="services-slider-radio" id="service-2">
       <input type="radio" name="services-slider-radio" id="service-3">
@@ -159,8 +162,24 @@
     <section class="contacts">
       <h2 class="header">Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-      <img src="img/map.jpg" width="560" height="222" alt="">
-      <p><a href="#" class="btn">Напишите нам</a></p>
+      <p><img src="img/map.jpg" width="560" height="222" alt=""></p>
+      <button class="btn">Напишите нам</button>
+      <section class="write-us">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form method="post">
+          <p>
+            <label>Ваше имя: <br><input type="text" placeholder="Представьтесь, пожалуйста"></label>
+          </p>
+          <p>
+            <label>Ваш e-mail: <br><input type="email" placeholder="Для отправки ответа"></label>
+          </p>
+          <p>
+            <label>Текст письма: <br><textarea cols="70" rows="7" placeholder="В свободной форме"></textarea></label>
+          </p>
+          <button class="btn" type="submit">Отправить</button>
+        </form>
+        <button class="write-us-close">Закрыть форму</button>
+      </section>
     </section>
   </div>
   <footer class="main-footer">
