@@ -8,23 +8,23 @@
 <body>
   <header class="main-header">
     <div class="container">
-      <div class="logo"><img src="img/logo.svg" width="184" height="40" alt="Device"></div>
-      <form action="url" method="get">
-        <button type="submit" name="search">Поиск</button>
-        <input type="search" name="search-field" placeholder="Поиск по сайту" />
-      </form>
-      <div class="user-block">
+      <section class="user-block">
+        <form class="search-form" action="url" method="get">
+          <input type="search" name="search-field" placeholder="Поиск по сайту">
+          <button type="submit" name="search">Найти</button>
+        </form>
         <a href="#">Войти</a>
         <p class="cart-section">
           <a class="compare" href="#">Сравнить</a>
           <a class="cart" href="#">Корзина</a>
         </p>
-      </div>
+      </section>
       <nav class="main-nav">
         <ul>
+          <li class="logo"><img src="img/logo.svg" width="184" height="40" alt="Device"></li>
           <li>
-            <button class="main-nav-submenu-open" type="button">Каталог товаров</button>
-            <div class="catalog-submenu">
+            <button class="main-nav-submenu-open main-nav-item label" type="button">Каталог товаров</button>
+            <div class="main-nav-submenu">
               <ul>
                 <li><a href="#">Виртуальная реальность</a></li>
                 <li><a href="#">Моноподы для селфи</a></li>
@@ -35,9 +35,9 @@
               </ul>
             </div>
           </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="main-nav-item label"><a href="#">Доставка</a></li>
+          <li class="main-nav-item label"><a href="#">Гарантия</a></li>
+          <li class="main-nav-item label"><a href="#">Контакты</a></li>
         </ul>
       </nav>
       </div>
@@ -51,9 +51,9 @@
       <label for="product-2">2</label>
       <label for="product-3">3</label>
     </div>
-    <ol class="slider">
-      <li class="slide slide-1">
-        <h2 class="header">Делай селфи, как Бен Стиллер!</h2>
+    <ol class="product-slider">
+      <li class="product-slide slide-1">
+        <h2 class="heading">Делай селфи, как Бен Стиллер!</h2>
         <img src="img/slider-1.png" width="384" height="486" alt="Селфи-палка 8 м">
         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
         <a href="#" class="btn">Подробнее</a>
@@ -70,8 +70,8 @@
           </tr>
         </table>
       </li>
-      <li class="slide slide-2">
-        <h2 class="header">Худеем правильно!</h2>
+      <li class="product-slide slide-2">
+        <h2 class="heading">Худеем правильно!</h2>
         <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
         <a href="#" class="btn">Подробнее</a>
@@ -84,17 +84,17 @@
           </tr>
         </table>
       </li>
-      <li class="slide slide-3">
-        <h2 class="header">Порхает как бабочка, жалит как пчела!</h2>
+      <li class="product-slide slide-3">
+        <h2 class="heading">Порхает как бабочка, жалит как пчела!</h2>
         <img src="img/slider-3.png" width="526" height="334" alt="Селфи-палка 8 м">
         <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
         <a href="#" class="btn">Подробнее</a>
         <table class="basic-features">
-          <tr class="basic-features-values">
+          <tr class="values">
             <td>800 м</td>
             <td>50 м</td>
           </tr>
-          <tr class="basic-features-parameters">
+          <tr class="features">
             <th>Дальность полета</th>
             <th>Радиус поражения</th>
           </tr>
@@ -116,25 +116,25 @@
   <section class="services-slider">
     <div class="container">
       <h2 class="visually-hidden">Сервисы</h2>
-      <input type="radio" name="services-slider-radio" id="service-1" checked>
-      <input type="radio" name="services-slider-radio" id="service-2">
-      <input type="radio" name="services-slider-radio" id="service-3">
+      <input class="visually-hidden" type="radio" name="services-slider-radio" id="service-1" checked>
+      <input class="visually-hidden" type="radio" name="services-slider-radio" id="service-2">
+      <input class="visually-hidden" type="radio" name="services-slider-radio" id="service-3">
       <div class="services-slider-switch">
-        <label for="service-1">Доставка</label>
-        <label for="service-2">Гарантия</label>
-        <label for="service-3">Кредит</label>
+        <label class="btn" for="service-1">Доставка</label>
+        <label class="btn" for="service-2">Гарантия</label>
+        <label class="btn" for="service-3">Кредит</label>
       </div>
-      <ul>
-        <li class="service-description delivery">
-          <h2 class="header">Доставка</h2>
+      <ul class="service-slide-list">
+        <li class="service-slide delivery">
+          <h2 class="heading">Доставка</h2>
           <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
         </li>
-        <li class="service-description warranty">
-          <h2 class="header">Гарантия</h2>
+        <li class="service-slide warranty">
+          <h2 class="heading">Гарантия</h2>
           <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
         </li>
-        <li class="service-description credit">
-          <h2 class="header">Кредит</h2>
+        <li class="service-slide credit">
+          <h2 class="heading">Кредит</h2>
           <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
         </li>
       </ul>
@@ -147,9 +147,9 @@
     <a href="https://gopro.com/" target="_blank"><img src="img/logo-3.jpg" width="260" height="100" alt="GoPro"></a>
     <a href="https://www.vive.com/ru/" target="_blank"><img src="img/logo-4.jpg" width="260" height="100" alt="Vive"></a>
   </section>
-  <div class="container about-contacts">
+  <div class="container">
     <section class="about-us">
-      <h2 class="header">О нас</h2>
+      <h2 class="heading">О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
       <ul>
@@ -160,21 +160,21 @@
       <a href="#" class="btn">Подробнее о нас</a>
     </section>
     <section class="contacts">
-      <h2 class="header">Контакты</h2>
+      <h2 class="heading">Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <p><img src="img/map.jpg" width="560" height="222" alt=""></p>
       <button class="btn" type="button">Напишите нам</button>
       <section class="write-us">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form method="post">
-          <p>
+          <p class="write-us-name">
             <label>Ваше имя: <br><input type="text" placeholder="Представьтесь, пожалуйста"></label>
           </p>
-          <p>
+          <p class="write-us-email">
             <label>Ваш e-mail: <br><input type="email" placeholder="Для отправки ответа"></label>
           </p>
-          <p>
-            <label>Текст письма: <br><textarea cols="70" rows="7" placeholder="В свободной форме"></textarea></label>
+          <p class="write-us-message">
+            <label>Текст письма: <br><textarea rows="7" placeholder="В свободной форме"></textarea></label>
           </p>
           <button class="btn" type="submit">Отправить</button>
         </form>
@@ -195,9 +195,9 @@
         <div class="footer-menu-area">
           <p>г. Москва, ул. Строителей, 15</p>
           <p class="footer-menu">
-            <a href="#">Доставка</a>
-            <a href="#">Гарантия</a>
-            <a href="#">Контакты</a>
+            <a class="label" href="#">Доставка</a>
+            <a class="label" href="#">Гарантия</a>
+            <a class="label" href="#">Контакты</a>
           </p>
           <p>Тел.: +7 (495) 495-95-95</p>
         </div>
