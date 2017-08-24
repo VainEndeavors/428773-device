@@ -380,14 +380,40 @@ a {
   padding: 0;
 }
 
-.partners a img {
-  filter: grayscale(1);
-  opacity: 0.2;
+.vendors {
+  display: flex;
+  justify-content: space-between;
 }
 
-.partners a:hover img,
-.partners a:active img {
-  filter: grayscale(0);
+.vendors a {
+  display: block;
+  width: 260px;
+  height: 100px;
+  background-size: cover;
+}
+
+.vendors a img {
+  opacity: 0;
+}
+
+.vendors a:nth-of-type(1) {
+  background: url(../img/logo-1-bw.jpg) 50% 50% no-repeat;
+}
+
+.vendors a:nth-of-type(2) {
+  background: url(../img/logo-2-bw.jpg) 50% 50% no-repeat;
+}
+
+.vendors a:nth-of-type(3) {
+  background: url(../img/logo-3-bw.jpg) 50% 50% no-repeat;
+}
+
+.vendors a:nth-of-type(4) {
+  background: url(../img/logo-4-bw.jpg) 50% 50% no-repeat;
+}
+
+.vendors a:hover img,
+.vendors a:active img {
   opacity: 1;
 }
 
