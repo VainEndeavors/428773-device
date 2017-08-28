@@ -21,7 +21,7 @@
       </section>
       <nav class="main-nav">
         <ul>
-          <li class="logo"><a href="index.html"><img src="img/logo.svg" width="184" height="40" alt="Device"></a></li>
+          <li class="logo"><a href="index.html"><img src="img/logo.svg" width="163" height="35" alt="Device"></a></li>
           <li>
             <button class="main-nav-submenu-open main-nav-item label" type="button">Каталог товаров</button>
             <div class="main-nav-submenu">
@@ -52,7 +52,7 @@
         </ul>
     </div>
     <div class="container-wide">
-      <div class="container">
+      <div class="container flex-wrapper">
         <section class="catalog-filter">
           <span class="label">Фильтр:</span>
           <form action="url" method="get">
@@ -96,8 +96,10 @@
           </div>
           <div class="catalog-items">
             <article class="catalog-item">
-              <h3 class="heading heading-small"><a href="#">Любительская селфи-палка</a></h3>
-              <p class="catalog-item-price">500 руб.</p>
+              <div class="flex-wrapper">
+                <h3 class="heading heading-small"><a href="#">Любительская селфи-палка</a></h3>
+                <p class="catalog-item-price">500 руб.</p>
+              </div>
               <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               <div class="catalog-item-hover">
                 <button class="btn" type="button">В корзину</button>
@@ -105,8 +107,10 @@
               </div>
             </article>
             <article class="catalog-item">
-              <h3 class="heading heading-small"><a href="#">Профессиональная селфи-палка</a></h3>
-              <p class="catalog-item-price">1 500 руб.</p>
+              <div class="flex-wrapper">
+                <h3 class="heading heading-small"><a href="#">Профессиональная селфи-палка</a></h3>
+                <p class="catalog-item-price">1 500 руб.</p>
+              </div>
               <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               <div class="catalog-item-hover">
                 <button class="btn" type="button">В корзину</button>
@@ -114,8 +118,10 @@
               </div>
             </article>
             <article class="catalog-item">
-              <h3 class="heading heading-small"><a href="#">Непотопляемая селфи-палка</a></h3>
-              <p class="catalog-item-price">2 500 руб.</p>
+              <div class="flex-wrapper">
+                <h3 class="heading heading-small"><a href="#">Непотопляемая селфи-палка</a></h3>
+                <p class="catalog-item-price">2 500 руб.</p>
+              </div>
               <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               <div class="catalog-item-hover">
                 <button class="btn" type="button">В корзину</button>
@@ -123,8 +129,10 @@
               </div>
             </article>
             <article class="catalog-item">
-              <h3 class="heading heading-small"><a href="#">Селфи-палка &#171;Следуй за мной&#187;</a></h3>
-              <p class="catalog-item-price">4 500 руб.</p>
+              <div class="flex-wrapper">
+                <h3 class="heading heading-small"><a href="#">Селфи-палка &#171;Следуй за мной&#187;</a></h3>
+                <p class="catalog-item-price">4 500 руб.</p>
+              </div>
               <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка &#171;Следуй за мной&#187;">
               <div class="catalog-item-hover">
                 <button class="btn" type="button">В корзину</button>
@@ -133,11 +141,15 @@
             </article>
           </div>
           <ul class="catalog-paginator label">
-            <li><a href="#prev">Назад</a></li>
-            <li><a class="paginator-current-page">1</a></li>
-            <li><a href="#2">2</a></li>
-            <li><a href="#3">3</a></li>
-            <li><a href="#next">Вперед</a></li>
+            <li><a class="previous" href="#prev">Назад</a></li>
+            <li>
+              <ul>
+                <li><a class="paginator-current-page">1</a></li>
+                <li><a href="#2">2</a></li>
+                <li><a href="#3">3</a></li>
+              </ul>
+            </li>
+            <li><a class="next" href="#next">Вперед</a></li>
           </ul>
         </section>
       </div>
@@ -145,13 +157,15 @@
   </main>
   <footer class="main-footer">
     <div class="container">
-      <div class="logo"><a href="index.html"><img src="img/logo-footer.svg" width="184" height="40" alt="Device"></a></div>
-      <div class="footer-user-area">
-        <p class="user-block"><a class="logout" href="#">Выйти</a></p>
-        <p>
-          <a class="compare" href="#">Сравнить</a>
-          <a class="cart" href="#">Корзина</a>
-        </p>
+      <div class="flex-wrapper">
+        <div class="logo"><a href="index.html"><img src="img/logo-footer.svg" width="163" height="35" alt="Device"></a></div>
+        <div class="footer-user-area">
+          <p class="user-block"><a class="logout" href="#">Выйти</a></p>
+          <p>
+            <a class="compare" href="#">Сравнить</a>
+            <a class="cart" href="#">Корзина</a>
+          </p>
+        </div>
       </div>
       <div class="footer-menu-area">
         <p>г. Москва, ул. Строителей, 15</p>
