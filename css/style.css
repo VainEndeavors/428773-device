@@ -115,7 +115,7 @@ a {
 .btn {
   display: block;
   position: relative;
-  border: none;
+  border: 0;
   background: none;
   height: 40px;
   padding: 0;
@@ -129,6 +129,7 @@ a {
   line-height: 2.1em;
   color: #000000;
   z-index: 1;
+  cursor: pointer;
 }
 
 .btn::after {
@@ -197,9 +198,9 @@ a {
 
 .search-form button,
 .main-nav-submenu-open {
-  border: none;
-  background: none;
+  border: 0;
   padding: 0;
+  background: none;
 }
 
 .search-form input {
@@ -343,6 +344,7 @@ a {
 /*---Слайдер с товарами---*/
 
 .product-slider.container{
+  position: relative;
   width: 1160px;
   margin-bottom: 110px;
 }
@@ -407,9 +409,20 @@ a {
 
 /*---Переключение слайдов---*/
 
-.product-slider .slider-switch {
+.product-slider-switch {
   position: absolute;
+  display: flex;
+  right: 85px;
+  top: 275px;
   z-index: 10;
+}
+
+.product-slider-switch label {
+  margin-right: 10px;
+}
+
+.product-slider-switch label:last-of-type {
+  margin-right: 0;
 }
 
 #product-2:checked ~ ol .product-slide {
@@ -507,7 +520,7 @@ a {
   flex-shrink: 0;
   margin-right: 120px;
   margin-top: 80px;
-  margin-bottom: 120px
+  margin-bottom: 120px;
 }
 
 .services-slider-switch .btn {
@@ -586,19 +599,19 @@ a {
 }
 
 .vendors a:nth-of-type(1) {
-  background: url(../img/logo-1-bw.jpg) 50% 50% no-repeat;
+  background: url("../img/logo-1-bw.jpg") 50% 50% no-repeat;
 }
 
 .vendors a:nth-of-type(2) {
-  background: url(../img/logo-2-bw.jpg) 50% 50% no-repeat;
+  background: url("../img/logo-2-bw.jpg") 50% 50% no-repeat;
 }
 
 .vendors a:nth-of-type(3) {
-  background: url(../img/logo-3-bw.jpg) 50% 50% no-repeat;
+  background: url("../img/logo-3-bw.jpg") 50% 50% no-repeat;
 }
 
 .vendors a:nth-of-type(4) {
-  background: url(../img/logo-4-bw.jpg) 50% 50% no-repeat;
+  background: url("../img/logo-4-bw.jpg") 50% 50% no-repeat;
 }
 
 .vendors a:hover img,
@@ -655,7 +668,7 @@ a {
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  border: none;
+  border: 0;
   background-color: #f2f2f2;
   margin-top: 10px;
 }
@@ -690,6 +703,7 @@ a {
 }
 
 .breadcrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
   padding-left: 60px;
@@ -699,7 +713,6 @@ a {
 }
 
 .breadcrumbs li {
-  display: inline-block;
   padding-right: 38px;
 }
 
@@ -830,8 +843,9 @@ a {
 .add-to-comparison {
   font-family: 'Open Sans', Tahoma, sans-serif;
   color: rgba(0, 0, 0, 0.5);
-  border: none;
+  border: 0;
   background: none;
+  cursor: pointer;
 }
 
 .add-to-comparison:hover,
