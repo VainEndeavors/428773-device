@@ -952,7 +952,10 @@ a {
 
 .modal-map {
   width: 960px;
+  min-height: 559px;
   line-height: 0;
+  background: url(../img/map-big.jpg) 50% 50% no-repeat;
+  background-size: 960px 559px;
 }
 
 /*---Основной контент каталога---*/
