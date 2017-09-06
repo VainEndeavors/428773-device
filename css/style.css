@@ -1178,9 +1178,9 @@ a {
   margin-bottom: 10px;
 }
 
-.catalog-filter input[type="checkbox"]:focus + label {
+/*.catalog-filter input[type="checkbox"]:focus + label {
   outline: 1px dotted #000000;
-}
+}*/
 
 .catalog-filter input[type="checkbox"] + label::before {
   position: absolute;
@@ -1197,8 +1197,9 @@ a {
   background: url(../img/checkbox-on.svg) 50% 50% no-repeat;
 }
 
-.catalog-filter input[type="radio"]:focus + label {
-  outline: 1px dotted #000000;
+.catalog-filter input[type="checkbox"] + label:hover::before,
+.catalog-filter input[type="checkbox"] + label:focus::before {
+  opacity: 0.6;
 }
 
 .catalog-filter input[type="radio"] + label::before {
@@ -1215,6 +1216,17 @@ a {
   background: url(../img/radio-on.svg) 50% 50% no-repeat;
 }
 
+.catalog-filter input[type="radio"] + label:hover::before,
+.catalog-filter input[type="radio"] + label:focus::before {
+  opacity: 0.6;
+}
+
+.catalog-filter input[type="checkbox"]:focus + label::before,
+.catalog-filter input[type="radio"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 /*---Карточки товаров---*/
 
 .catalog-page {
@@ -1227,6 +1239,8 @@ a {
 .catalog-items {
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 0;
+  width: 760px;
   justify-content: space-between;
   align-content: flex-start;
   padding-top: 70px;
