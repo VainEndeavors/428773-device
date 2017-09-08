@@ -1400,6 +1400,13 @@ a {
   outline: 1px dotted #000000;
 }
 
+.catalog-filter input[type="checkbox"]:disabled + label,
+.catalog-filter input[type="checkbox"]:disabled + label::before,
+.catalog-filter input[type="radio"]:disabled + label,
+.catalog-filter input[type="radio"]:disabled + label::before {
+  opacity: 0.3;
+}
+
 /*---Карточки товаров---*/
 
 .catalog-page {
