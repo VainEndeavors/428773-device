@@ -557,7 +557,7 @@ a {
 }
 
 .basic-features td {
-  padding-bottom: 14px;
+  padding-bottom: 16px;
 }
 
 .basic-features th {
@@ -665,27 +665,27 @@ a {
   z-index: -2;
 }
 
-.popular-list li:first-child a::after {
+.popular-vr::after {
   background: url("../img/popular-1.svg") 50% 50% no-repeat;
 }
 
-.popular-list li:nth-child(2) a::after {
+.popular-monopod::after {
   background: url("../img/popular-2.svg") 38px 41px no-repeat;
 }
 
-.popular-list li:nth-child(3) a::after {
+.popular-camera::after {
   background: url("../img/popular-3.svg") 49px 39px no-repeat;
 }
 
-.popular-list li:nth-child(4) a::after {
+.popular-fitness::after {
   background: url("../img/popular-4.svg") 28px 50px no-repeat;
 }
 
-.popular-list li:nth-child(5) a::after {
+.popular-smartwatch::after {
   background: url("../img/popular-5.svg") 55px 32px no-repeat;
 }
 
-.popular-list li:nth-child(6) a::after {
+.popular-copter::after {
   background: url("../img/popular-6.svg") 12px 49px no-repeat;
 }
 
@@ -1147,11 +1147,13 @@ a {
 }
 
 .head-container-wide {
+  min-width: 1200px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #dedede), color-stop(50%, #eeeeee));
   background-image: linear-gradient(to right, #dedede 50%, #eeeeee 50%);
 }
 
 .body-container-wide {
+  min-width: 1200px;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #eeeeee), color-stop(50%, #ffffff));
   background-image: linear-gradient(to right, #eeeeee 50%, #ffffff 50%);
 }
@@ -1217,6 +1219,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   margin-left: auto;
 }
 
@@ -1467,7 +1471,7 @@ a {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  padding-bottom: 50px;
+  padding-bottom: 52px;
 }
 
 .catalog-item .heading-small {
@@ -1557,8 +1561,8 @@ a {
           align-items: baseline;
   margin: 0;
   padding: 0;
-  margin-top: -10px;
-  margin-bottom: 73px;
+  margin-top: -15px;
+  margin-bottom: 74px;
   background-color: #eeeeee;
   list-style: none;
 }
@@ -1569,7 +1573,7 @@ a {
   display: flex;
   margin: 0;
   padding: 0;
-  padding-left: 10px;
+  padding-left: 15px;
   list-style: none;
   letter-spacing: normal;
 }
@@ -1581,6 +1585,10 @@ a {
 .catalog-paginator a {
   padding: 0 5px;
   color: rgba(0, 0, 0, 0.3);
+}
+
+.catalog-paginator .paginator-current-page {
+  padding: 0 5px;
 }
 
 .catalog-paginator a:hover,
@@ -1618,6 +1626,7 @@ a {
 /*---Футер---*/
 
 .main-footer {
+  min-width: 1200px;
   padding-top: 65px;
   background-color: #464646;
   color: #ffffff;
