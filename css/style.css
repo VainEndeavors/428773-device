@@ -35,7 +35,6 @@
 }
 
 body {
-  margin: 0;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 15px;
   font-weight: lighter;
@@ -97,15 +96,12 @@ a {
   color: #000000;
 }
 
-.main-nav .logo a:hover img,
-.main-nav .logo a:focus img,
-.main-footer .logo a:hover img,
-.main-footer .logo a:focus img {
+.logo a:hover,
+.logo a:focus {
   opacity: 0.6;
 }
 
-.main-nav .logo a:focus img,
-.main-footer .logo a:focus img {
+.logo a:active {
   opacity: 0.3;
 }
 
@@ -499,7 +495,7 @@ a {
   margin-right: 35px;
 }
 
-.product-slide .image-wrapper img {
+.product-slide img {
   display: block;
   margin: auto;
 }
@@ -510,7 +506,7 @@ a {
   margin-right: auto;
 }
 
-.product-slide .text-wrapper svg {
+.product-slide svg {
   margin-top: 38px;
   margin-bottom: 27px;
 }
@@ -589,6 +585,7 @@ a {
   background: url(../img/slider-button-empty.svg) 50% 50% no-repeat;
   background-size: 12px 12px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .product-slider-switch label:last-of-type {
@@ -619,8 +616,7 @@ a {
 #product-1:focus ~ .product-slider-switch label[for="product-1"],
 #product-2:focus ~ .product-slider-switch label[for="product-2"],
 #product-3:focus ~ .product-slider-switch label[for="product-3"] {
-  -webkit-box-shadow: 0 0 0 3px #f7e296;
-          box-shadow: 0 0 0 3px #f7e296;
+  outline: 1px dotted #000000;
 }
 
 /*---Популярные товары---*/
@@ -632,7 +628,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   margin-bottom: 83px;
@@ -641,6 +637,7 @@ a {
   font-weight: bold;
   color: #000000;
   line-height: 1.2em;
+  list-style: none;
 }
 
 .popular-list li {
@@ -687,7 +684,7 @@ a {
   background: url("../img/popular-5.svg") 55px 32px no-repeat;
 }
 
-.popular-list li:last-child a::after {
+.popular-list li:nth-child(6) a::after {
   background: url("../img/popular-6.svg") 12px 49px no-repeat;
 }
 
@@ -707,7 +704,7 @@ a {
 
 .services-slider {
   margin-bottom: 94px;
-  padding-bottom: 68px;
+  padding-bottom: 70px;
   background-image: linear-gradient(to bottom, transparent 100px, #e5e5e5 100px);
 }
 
@@ -717,7 +714,8 @@ a {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   margin-right: 115px;
-  padding: 79px 0 43px;
+  padding-top: 79px;
+  padding-bottom: 45px;
   background: linear-gradient(to left, #000000 7px, transparent 7px);
 }
 
@@ -800,14 +798,14 @@ a {
   z-index: -1;
 }
 
-#service-2:checked ~ .flex-wrapper .services-slide {
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
+.services-slide {
+  display: none;
 }
 
-#service-3:checked ~ .flex-wrapper .services-slide {
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
+#service-1:checked ~ .flex-wrapper .delivery,
+#service-2:checked ~ .flex-wrapper .warranty,
+#service-3:checked ~ .flex-wrapper .credit {
+  display: block;
 }
 
 /*---Список производителей---*/
@@ -829,7 +827,7 @@ a {
   background-size: cover;
 }
 
-.vendors a img {
+.vendors img {
   opacity: 0;
 }
 
@@ -849,9 +847,9 @@ a {
   background: url("../img/logo-4-bw.jpg") 50% 50% no-repeat;
 }
 
-.vendors a:hover img,
-.vendors a:focus img,
-.vendors a:active img {
+.vendors img:hover,
+.vendors img:focus,
+.vendors img:active {
   opacity: 1;
 }
 
@@ -879,7 +877,7 @@ a {
 }
 
 .about-us p {
-  width: 500px;
+  width: 480px;
   margin: 30px 0;
   letter-spacing: 0.005em;
 }
@@ -896,10 +894,10 @@ a {
 }
 
 .about-us li {
-  padding-left: 35px;
+  padding-left: 36px;
   background-image: url(../img/bullet.svg);
   background-size: 8px 8px;
-  background-position: left 11px;
+  background-position: 2px 12px;
   background-repeat: no-repeat;
   margin-bottom: 10px;
 }
@@ -1117,8 +1115,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 6px;
   margin-bottom: 43px;
   padding: 0;
   padding-left: 60px;
@@ -1159,6 +1158,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-shrink: 0;
   width: 268px;
   padding-left: 60px;
   background-color: #dedede;
@@ -1190,11 +1190,13 @@ a {
 }
 
 .catalog-sort .sort-categories {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 55px;
 }
 
-.catalog-sort .sort-categories a:not(:last-child) {
-  margin-right: 28px;
+.sort-categories a:not(:last-child) {
+  margin-right: 30px;
 }
 
 .catalog-sort .ascending-descending {
@@ -1212,19 +1214,19 @@ a {
   margin-left: auto;
 }
 
-.catalog-sort .ascending-descending a {
+.ascending-descending a {
   display: block;
   width: 11px;
   height: 10px;
   opacity: 0.2;
 }
 
-.catalog-sort .ascending-descending a:hover,
-.catalog-sort .ascending-descending a:focus {
+.ascending-descending a:hover,
+.ascending-descending a:focus {
   opacity: 0.4;
 }
 
-.catalog-sort .ascending-descending a:active {
+.ascending-descending a:active {
   opacity: 1;
 }
 
@@ -1332,6 +1334,7 @@ a {
 .price-current-range button:active {
   background-size: 22px 24px;
   top: -11px;
+  padding-top: 24px;
 }
 
 .price-current-range .min-price {
@@ -1565,7 +1568,7 @@ a {
   letter-spacing: normal;
 }
 
-.catalog-paginator ul li:not(:last-child) {
+.catalog-paginator li:not(:last-child) {
   margin-right: 20px;
 }
 
@@ -1724,7 +1727,7 @@ a {
   margin-right: auto;
 }
 
-.footer-menu-section .footer-menu .label {
+.footer-menu .label {
   font-size: 18px;
 }
 
@@ -1768,7 +1771,7 @@ a {
           justify-content: space-between;
 }
 
-.footer-social-section .social a {
+.social a {
   display: block;
   width: 32px;
   height: 32px;
@@ -1777,32 +1780,32 @@ a {
   opacity: 0.3;
 }
 
-.footer-social-section .social a:hover,
-.footer-social-section .social a:focus {
+.social a:hover,
+.social a:focus {
   opacity: 0.6;
 }
 
-.footer-social-section .social a:active {
+.social a:active {
   opacity: 0.1;
 }
 
-.footer-social-section .social-fb {
+.social-fb {
   background-image: url(../img/fb.svg);
 }
 
-.footer-social-section .social-in {
+.social-in {
   background-image: url(../img/instagram.svg);
 }
 
-.footer-social-section .social-tw {
+.social-tw {
   background-image: url(../img/twitter.svg);
 }
 
-.footer-social-section .html-academy {
+.html-academy {
   margin-left: 53px;
 }
 
-.footer-social-section .html-link {
+.html-link {
   display: block;
   width: 27px;
   height: 35px;
@@ -1812,11 +1815,11 @@ a {
   opacity: 1;
 }
 
-.footer-social-section .html-link:hover,
-.footer-social-section .html-link:focus {
+.html-link:hover,
+.html-link:focus {
   opacity: 0.6;
 }
 
-.footer-social-section .html-link:active {
+.html-link:active {
   opacity: 0.3;
 }
