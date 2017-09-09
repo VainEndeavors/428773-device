@@ -1764,8 +1764,6 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 142px;
-      flex-basis: 142px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1778,6 +1776,10 @@ a {
   background-size: 32px 32px;
   background-repeat: no-repeat;
   opacity: 0.3;
+}
+
+.social a:not(:last-of-type) {
+  margin-right: 23px;
 }
 
 .social a:hover,
@@ -1809,6 +1811,7 @@ a {
   display: block;
   width: 27px;
   height: 35px;
+  margin-left: 53px;
   background-image: url(../img/logo-html.svg);
   background-size: 27px 35px;
   background-repeat: no-repeat;
